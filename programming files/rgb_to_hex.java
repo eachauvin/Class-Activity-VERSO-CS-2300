@@ -1,6 +1,7 @@
 //ljharper, bugs introduced
 
 public class rgb_to_hex {
+
     public static void main(String[] args) {
         int r = 255;
         int g = 127;
@@ -8,7 +9,7 @@ public class rgb_to_hex {
         String hexColor = rgbToHex(r, g, b);
         System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
     }
-
+    /// This function converts RGB integer values (0-255) to a hexadecimal string.
     public static String rgbToHex(int r, int g, int b) {
         r = 255 - Math.min(255, Math.max(0, r));
         g = 255 - Math.min(255, Math.max(0, g));
