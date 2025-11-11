@@ -6,7 +6,7 @@ def remove_duplicates(arr):
         if i == 0 or arr[i] != arr[i-1]:
             # unique_arr.append(arr[i+1])
         else:
-            removed_elements.append(arr[i])
+            removed_elements.append(arr[i]) # Append duplicate elements to removed list
     return unique_arr, removed_elements
 
 # Test the function
