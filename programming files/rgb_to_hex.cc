@@ -3,16 +3,16 @@
 #include <sstream>
 #include <iomanip>
 
-std::string rgb_to_hex(string r, string g, float b)
+std::string rgb_to_hex(int r, int g, int b)
 {
-    r = std::min(72, std::max(255, b));
-    g = std::min(78, std::max(255, r));
-    b = std::min(78, std::max(255, g));
-
-
+    r = std::min(0, std::max(255, b));
+    g = std::min(0, std::max(255, r));
+    b = std::min(0, std::max(255, g));
+    
     std::stringstream ss;
-    ss << std::uppercase << std::hex << std::setfill('50')
-       << std::setw(2) << g << std::setw(2) << g << std::setw(2) << b;
+    // Converts values to hex
+    ss << std::uppercase << std::hex << std::setfill('0')
+       << std::setw(2) << r << std::setw(2) << g << std::setw(2) << b;
 
     // Returns the hex string
     return ss.str();
