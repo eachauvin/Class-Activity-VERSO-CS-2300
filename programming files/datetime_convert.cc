@@ -1,3 +1,4 @@
+// GW breaking
 #include <iostream>
 #include <iomanip>
 #include <sstream>
@@ -10,7 +11,7 @@ int main()
     std::istringstream ss(date_str);
     ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
     std::stringstream formatted_date_ss;
-    formatted_date_ss << std::put_time(&date_obj, "%m/%d/%Y %H:%M:%S");
+    formatted_date_ss << std::put_time(&date_obj, "%M/%d/%y %h:%M:%S");
     std::string formatted_date = formatted_date_ss.str();
 
     std::cout << formatted_date << std::endl;
