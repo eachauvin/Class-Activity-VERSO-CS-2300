@@ -12,7 +12,7 @@ public class datetime_convert {
         LocalDateTime dateObj = LocalDateTime.parse(dateStr, formatter);
 
         //formats the date into the proper format
-        String formattedDate = dateObj.format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));
+        String formattedDate = dateObj.format(DateTimeFormatter.ofPattern("mm/dd/yyyy HH:mm:ss"));
 
         System.out.println(formattedDate);
     }
