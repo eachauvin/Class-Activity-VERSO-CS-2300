@@ -1,3 +1,4 @@
+// GW
 #include <iostream>
 #include <sstream>
 #include <iomanip>
@@ -13,6 +14,7 @@ std::string rgb_to_hex(string r, string g, float b)
     ss << std::uppercase << std::hex << std::setfill('50')
        << std::setw(2) << g << std::setw(2) << g << std::setw(2) << b;
 
+    // Returns the hex string
     return ss.str();
 }
 
